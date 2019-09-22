@@ -1,0 +1,136 @@
+/*Le jeux*/
+#lejeux{
+    width: 60%;
+    height: 48.8125rem; /*781px*/
+    background:linear-gradient(-45deg, #ee7752, #ef7e5a, #23a6d5, #23d5ab); /*Le dégradé, on peut soit le changer soit le virer, si qlq'un n'aime pas*/
+    background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+    margin-left: 20%;
+}
+/*Animation du dégradé*/
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*début Le bonus*/
+#lejeux #lebonus{
+    width: 30%;
+    height: 48.8125rem; /*781px*/
+    background-color: lightgrey;
+    float: left;
+}
+
+#lebonus .foisdeux{
+    width: 100%;
+    height: 24.90625rem; 
+    background-color: lightgrey;
+    float: left;
+}
+/*Les div du bonus*/
+#lebonus .foisdeux .xdeux{
+    width: 90%;
+    height: 20rem;
+    background-color: #f3f1f1;;
+    margin-left: 5%;
+    margin-top: 2rem;
+    border-radius: .2rem;
+}
+
+.foisdeux .xdeux #double{
+    width: 62%;
+    height: 12rem;
+    border-radius: .2rem .2rem 0rem 0rem;
+    font-size: 1.9rem;
+    line-height: 5.9;
+    margin-left: 38%;
+
+}
+
+.foisdeux .xdeux #bonus{
+    width: 62%;
+    height: 8rem;
+    border-radius: 0rem 0rem .2rem .2rem;
+    font-size: 1.9rem;
+    line-height: 2.9;
+    margin-left: 29%;
+}
+
+#lebonus .dubouton{
+    width: 100%;
+    height: 10.90625rem;
+    float: left;
+}
+
+#lebonus .btn{
+    width: 65%;
+    height: 4.2rem;
+    background-color: #ef7e5a;
+    border: none;
+    border-radius: .2rem;
+    margin-left: 18%;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+/*Fin lebonus*/
+
+
+/*Début Le score*/
+#lejeux #lescore{
+    width: 70%;
+    height: 48.8125rem; /*781px*/
+    float: left;
+}
+
+/*Header*/
+#lescore .letitre{
+    width: 74%;
+    height: 2rem; /*32px*/
+    font-family: 'Lobster', cursive;
+    font-size: 3.125rem; /*50px*/
+    padding-top: 3rem; /*48px*/
+    padding-bottom: 3rem;
+    margin-left: 26%;
+}
+
+/*section Affichage*/
+#lescore .onaffich{
+    width: 90%;
+    height: 8rem;
+    background-color: #f3f1f1;
+    margin-top: 5rem;
+    margin-left: 5%;
+    border-radius: .2rem;
+}
+
+#lescore #affichage{
+    width: 40%;
+    height: 3rem;
+    margin-left: 33%;
+    padding-top: 3rem;
+    font-family: 'Lobster', cursive; /*Si non on peut changer de font*/ 
+    font-size: 2rem;
+    color: #000;
+}
+
+/*Le cookie est ici- Section Clic Cookie*/
+#lescore .lecookie{
+    width: 40%;
+    height: 14rem;
+    margin-top: 8rem;
+    margin-left: 11rem;
+    background-color: #f3f1f1;
+}
+
+
+
