@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <title>Loulou Clicker</title>
 </head>
-<body>
+<body onload="initCookieClicker">
     <!--Début du site-->
     <section id="lejeux">
-        <!--Début séction lebonus-->
+        <!--Début section lebonus-->
             <section id="lebonus">
                 <section class="foisdeux">
                     <section class="xdeux">
@@ -21,7 +21,7 @@
                         <section id="bonus">Bonus++</section>
                     </section>
                 </section>
-                <!--La setion bouton-->
+                <!--La section bouton-->
                 <section class="dubouton">
                     <button id="multiplier" class="btn">Multiplier</button>
                     <!--Le résultat apparaît dans l'id mults-->
@@ -32,6 +32,14 @@
                     <button id="autoClic" class="btn">Bonus ++</button>
                     <!--Le résultat saffiche dans l'id bonus-->
                 </section>
+                <!-- PVW - A adapter --> 
+                <div>
+                    <button type="button" id="multiplier" onclick="augmenterMultiplicateur()">Multiplicateur</button>
+                </div>
+                <div>
+                    <button type="button" id="autoclic" onclick="acheteAutoclicker()">Acheter Autoclicker</button>
+                </div>
+                <!-- PVW - Fin à adapter-->
             </section>
         <!--Fin séction lebonus-->    
 
@@ -44,15 +52,21 @@
 
                <!--Le score s'affiche dans ces deux section parentes-->
                <section class="onaffich">
-                   <section id="affichage">SCORE++</section>
+
                    
+                   
+
+                   <section id="affichage">0</section>
+
                </section>
 
                <!--La section du cookie-->
                <section class="lecookie">
+
                    <section id="Clic">
-                       <img src="images/LoulouClicker.svg" alt="LoulouClicker" id="clic">
+                       <img src="images/LoulouClicker.svg" alt="LoulouClicker" id="clic" onclick="augmenterScore()>
                    </section>
+
                </section>
            </section>
         <!--Fin séction lescore--> 
@@ -62,5 +76,6 @@
 
     <!--Code javascript-->
    <script type="text/javascript" src="loulou.js"></script> 
+   
 </body>
 </html>
