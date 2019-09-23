@@ -23,23 +23,16 @@
                 </section>
                 <!--La section bouton-->
                 <section class="dubouton">
-                    <button id="multiplier" class="btn">Multiplier</button>
+                    <button id="multiplier" onclick="augmenterMultiplicateur()" class="btn">Multiplier</button>
                     <!--Le résultat apparaît dans l'id mults-->
 
-                    <button id="autoClic" class="btn">Autoclic</button>
-                    <p id="resulautoclic"></p>
+                    <button id="autoclic" class="btn">Autoclic</button>
+                    
 
-                    <button id="autoClic" class="btn">Bonus ++</button>
+                    <button id="bonus" onclick="acheteAutoclicker()" class="btn">Bonus ++</button>
                     <!--Le résultat saffiche dans l'id bonus-->
                 </section>
-                <!-- PVW - A adapter --> 
-                <div>
-                    <button type="button" id="multiplier" onclick="augmenterMultiplicateur()">Multiplicateur</button>
-                </div>
-                <div>
-                    <button type="button" id="autoclic" onclick="acheteAutoclicker()">Acheter Autoclicker</button>
-                </div>
-                <!-- PVW - Fin à adapter-->
+
             </section>
         <!--Fin séction lebonus-->    
 
@@ -53,9 +46,6 @@
                <!--Le score s'affiche dans ces deux section parentes-->
                <section class="onaffich">
 
-                   
-                   
-
                    <section id="affichage">0</section>
 
                </section>
@@ -64,7 +54,11 @@
                <section class="lecookie">
 
                    <section id="Clic">
-                       <img src="images/LoulouClicker.svg" alt="LoulouClicker" id="clic" onclick="augmenterScore()" onmousedown="smallbutton()" onmouseup="normalbutton()" onmouseover="zoombutton()" onmouseout="normalbutton()"> 
+       
+
+                       <img src="images/LoulouClicker.svg" alt="LoulouClicker" id="clic" onclick="augmenterScore()" onmousedown="smallbutton()" onmouseup="normalbutton()" onmouseover="zoombutton()" onmouseout="normalbutton()" onclick="playSound('./sounds/duck-quack2.wav')" >
+                       <audio id="audio"><source src="./sounds/duck-quack2.wav" /></audio>
+
                    </section>
 
                </section>
