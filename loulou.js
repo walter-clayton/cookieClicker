@@ -99,3 +99,19 @@ function initCookieClicker() {
     cliquerCookie.onclick = augmenterScore();
     acheterAutoclicker.disabled = false;
 }
+
+function smallbutton() {
+    document.getElementById("clic").style.height = "14rem";
+    
+}
+
+function normalbutton() {
+    document.getElementById("clic").style.height = "15rem";
+    
+}
+
+function zoombutton() {
+    document.getElementById("clic").style.height = "16rem";
+    
+}
+
