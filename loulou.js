@@ -97,5 +97,13 @@ function boucleControl() {
 
 function initCookieClicker() {
     cliquerCookie.onclick = augmenterScore();
+    
     acheterAutoclicker.disabled = false;
 }
+
+function playSound() {
+    
+}
+const mySound = document.getElementById("audio");   
+const correctButton = document.getElementById("Clic");
+Clic.addEventListener("click", function(){ mySound.play(); })
