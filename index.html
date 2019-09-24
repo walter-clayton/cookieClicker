@@ -9,6 +9,7 @@
     <!--<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">-->
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <title>Loulou Clicker</title>
 
 </head>
@@ -19,21 +20,22 @@
             <section id="lebonus">
                 <section class="foisdeux">
                     <section class="xdeux">
-                        <section id="mults">Résultmult</section>
-                        <section id="autclics">Résultautoclic</section>
-                        <section id="bonus">Bonus++</section>
+                        <section id="mults">0</section>
+                        <section id="bonnus">0</section>
                     </section>
                 </section>
                 <!--La section bouton-->
                 <section class="dubouton">
-                    <button id="multiplier" onclick="augmenterMultiplicateur()" class="btn">Multiplier</button>
+                    <a href="#" id="multiplier" onclick="augmenterMultiplicateur()" class="myButton1">Multiplicateur</a>
+                    <!--<button id="multiplier" onclick="augmenterMultiplicateur()" class="btn">Multiplier</button>-->
                     <!--Le résultat apparaît dans l'id mults-->
 
-                    <button id="autoclic" class="btn">Autoclic</button>
+                    <a href="#" id="autoclic" onclick="acheteAutoclicker()" class="myButton2">Autoclic</a>
+                    <!--<button id="autoclic" onclick="acheteAutoclicker()" class="btn">Autoclic</button>-->
                     
-
-                    <button id="bonus" onclick="acheteAutoclicker()" class="btn">Bonus ++</button>
-                    <!--Le résultat saffiche dans l'id bonus-->
+                    <a href="#" id="bonus" onclick="acheteBonus()" class="myButton3">Bonus++</a>
+                    <!--<button id="bonus" onclick="acheteBonus()" class="btn">Acheter Bonus</button>-->
+                    <!--Le résultat saffiche dans l'id bonnus-->
                 </section>
 
             </section>
@@ -58,7 +60,7 @@
 
                    <section id="Clic">
 
-                       <img src="images/LoulouClicker.svg" alt="LoulouClicker" id="clic" onclick="augmenterScore()" onclick="playSound('./sounds/duck-quack.wav')" >
+                       <img src="images/LoulouClicker.svg" alt="LoulouClicker" id="clic" onclick="augmenterScore()" onclick="playSound('./sounds/duck-quack.wav')" onmousedown="smallbutton()" onmouseup="normalbutton()" onmouseover="zoombutton()" onmouseout="normalbutton()">
                        <audio id="audio"><source src="./sounds/duck-quack.wav" /></audio>
 
                    </section>
