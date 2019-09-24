@@ -46,43 +46,41 @@ body {
 #lebonus .foisdeux .xdeux{
     width: 90%;
     height: 20rem;
-    background-color: #f3f1f1;;
     margin-left: 5%;
     margin-top: 2rem;
     border-radius: .2rem;
 }
 
 .foisdeux .xdeux #mults{
-    width: 100%;
-    height: 3rem;
-    font-family: 'Lobster', cursive;
-    font-size: 1.9rem;
-    line-height: 0.9;
+    width: 94%;
+    height: 8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400!important;
+    font-size: 1.4rem!important;
+    line-height: 1.5;
     text-align: center;
+    background-color: #f3f1f1;
     margin-bottom: 2rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
+    border: solid 1px #81b770;
+    border-radius: .2rem .2rem;
+    padding: 0.4rem;
 
 }
 
-.foisdeux .xdeux #autclics{
-    width: 100%;
-    height: 3rem;
-    font-family: 'Lobster', cursive;
-    font-size: 1.9rem;
-    line-height: 0.9;
-    text-align: center;
-    margin-bottom: 2rem;
 
-}
-
-.foisdeux .xdeux #bonus{
-    width: 100%;
-    height: 3rem;
-    font-family: 'Lobster', cursive;
-    font-size: 1.9rem;
-    line-height: 0.9;
+.foisdeux .xdeux #bonnus{
+    width: 94%;
+    height: 8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400!important;
+    font-size: 1.4rem!important;
+    line-height: 1.5;
     text-align: center;
-    margin-bottom: 2rem;
+    background-color: #f3f1f1;
+    border: solid 1px #e6b129;
+    border-radius: .2rem .2rem;
+    padding: 0.4rem;
 }
 
 #lebonus .dubouton{
@@ -91,17 +89,134 @@ body {
     float: left;
 }
 
-#lebonus .btn{
-    width: 92%;
-    height: 4.2rem;
-    background-color: #81b770;
-    border: none;
-    border-radius: .2rem;
+/*Bouton multiplicateur*/
+#lebonus .myButton1 {
     margin-left: 4%;
-    margin-top: 2rem;
-    font-size: 1.3rem;
+    margin-bottom: 2rem;
+	-moz-box-shadow: 0rem 0.625rem 0.875rem -0.4375rem #3dc21b;
+	-webkit-box-shadow: 0px 0.625rem 0.875rem -0.4375rem #3dc21b;
+	box-shadow: 0rem 0.625rem 0.875rem -0.4375rem #3dc21b;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #39d463), color-stop(1, #3f9e0b));
+	background:-moz-linear-gradient(top, #39d463 5%, #3f9e0b 100%);
+	background:-webkit-linear-gradient(top, #39d463 5%, #3f9e0b 100%);
+	background:-o-linear-gradient(top, #39d463 5%, #3f9e0b 100%);
+	background:-ms-linear-gradient(top, #39d463 5%, #3f9e0b 100%);
+	background:linear-gradient(to bottom, #39d463 5%, #3f9e0b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#39d463', endColorstr='#3f9e0b',GradientType=0);
+	background-color:#39d463;
+	-moz-border-radius:0.5rem;
+	-webkit-border-radius:0.5rem;
+	border-radius: 0.5rem;
+    display: inline-block;
     cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 1.25rem 3.75rem;
+    text-decoration: none;
+    text-shadow: 0rem 0.0625rem 0rem #2f6627;
 }
+#lebonus .myButton1:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3f9e0b), color-stop(1, #39d463));
+	background:-moz-linear-gradient(top, #3f9e0b 5%, #39d463 100%);
+	background:-webkit-linear-gradient(top, #3f9e0b 5%, #39d463 100%);
+	background:-o-linear-gradient(top, #3f9e0b 5%, #39d463 100%);
+	background:-ms-linear-gradient(top, #3f9e0b 5%, #39d463 100%);
+	background:linear-gradient(to bottom, #3f9e0b 5%, #39d463 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f9e0b', endColorstr='#39d463',GradientType=0);
+	background-color:#3f9e0b;
+}
+#lebonus .myButton:active {
+	position:relative;
+	top:0.0625rem;
+}
+
+/*Bouton Autoclicker*/
+#lebonus .myButton2 {
+    margin-left: 4%;
+    margin-bottom: 2rem;
+	-moz-box-shadow: 0rem 0.625rem 0.875rem -0.4375rem #ffb700;
+	-webkit-box-shadow: 0px 0.625rem 0.875rem -0.4375rem #ffb700;
+	box-shadow: 0rem 0.625rem 0.875rem -0.4375rem #ffb700;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffe66b), color-stop(1, #ebce3b));
+	background:-moz-linear-gradient(top, #ffe66b 5%, #ebce3b 100%);
+	background:-webkit-linear-gradient(top, #ffe66b 5%, #ebce3b 100%);
+	background:-o-linear-gradient(top, #ffe66b 5%, #ebce3b 100%);
+	background:-ms-linear-gradient(top, #ffe66b 5%, #ebce3b 100%);
+	background:linear-gradient(to bottom, #ffe66b 5%, #ebce3b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe66b', endColorstr='#ebce3b',GradientType=0);
+	background-color:#ffe66b;
+	-moz-border-radius:0.5rem;
+	-webkit-border-radius:0.5rem;
+	border-radius:0.5rem;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 1.25rem;
+    font-weight: 400;
+	padding:1.25rem 5.29rem;
+	text-decoration:none;
+	text-shadow:0rem 0.0625rem 0rem #a78623;
+}
+#lebonus .myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ebce3b), color-stop(1, #ffe66b));
+	background:-moz-linear-gradient(top, #ebce3b 5%, #ffe66b 100%);
+	background:-webkit-linear-gradient(top, #ebce3b 5%, #ffe66b 100%);
+	background:-o-linear-gradient(top, #ebce3b 5%, #ffe66b 100%);
+	background:-ms-linear-gradient(top, #ebce3b 5%, #ffe66b 100%);
+	background:linear-gradient(to bottom, #ebce3b 5%, #ffe66b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebce3b', endColorstr='#ffe66b',GradientType=0);
+	background-color:#ebce3b;
+}
+#lebonus .myButton2:active {
+	position:relative;
+	top:0.0625rem;
+}
+
+/*Bouton Bonus*/
+#lebonus .myButton3 {
+    margin-left: 4%;
+	-moz-box-shadow: 0rem 0.625rem 0.875rem -0.4375rem #750000;
+	-webkit-box-shadow: 0rem 0.625rem 0.875rem -0.4375rem #750000;
+	box-shadow: 0rem 0.625rem 0.875rem -0.4375rem #750000;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f04343), color-stop(1, #c90e0e));
+	background:-moz-linear-gradient(top, #f04343 5%, #c90e0e 100%);
+	background:-webkit-linear-gradient(top, #f04343 5%, #c90e0e 100%);
+	background:-o-linear-gradient(top, #f04343 5%, #c90e0e 100%);
+	background:-ms-linear-gradient(top, #f04343 5%, #c90e0e 100%);
+	background:linear-gradient(to bottom, #f04343 5%, #c90e0e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f04343', endColorstr='#c90e0e',GradientType=0);
+	background-color:#f04343;
+	-moz-border-radius:0.5rem;
+	-webkit-border-radius:0.5rem;
+	border-radius:0.5rem;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1.25rem;
+	font-weight:400;
+	padding:1.25rem 4.98rem;
+	text-decoration:none;
+	text-shadow:0rem 0.0625rem 0rem #720b0b;
+}
+#lebonus .myButton3:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c90e0e), color-stop(1, #f04343));
+	background:-moz-linear-gradient(top, #c90e0e 5%, #f04343 100%);
+	background:-webkit-linear-gradient(top, #c90e0e 5%, #f04343 100%);
+	background:-o-linear-gradient(top, #c90e0e 5%, #f04343 100%);
+	background:-ms-linear-gradient(top, #c90e0e 5%, #f04343 100%);
+	background:linear-gradient(to bottom, #c90e0e 5%, #f04343 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c90e0e', endColorstr='#f04343',GradientType=0);
+	background-color:#c90e0e;
+}
+#lebonus .myButton3:active {
+	position:relative;
+	top:0.0625rem;
+}
+
 
 
 /*Fin lebonus*/
@@ -137,6 +252,7 @@ header img{
     width: 90%;
     height: 8rem;
     background-color: #f3f1f1;
+    border: solid 0.0625rem #c90e0e;
     margin-top: 5rem;
     margin-left: 5%;
     border-radius: 10.2rem;;
