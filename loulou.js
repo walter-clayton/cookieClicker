@@ -9,9 +9,12 @@ var bBonus = false;
 var timeAutoclicker = 15; // 60 sec
 var cliquerCookie = document.getElementById('clic');
 var afficherScore = document.getElementById('affichage');
-var afficherMultiplier = document.getElementById("mults");
+var afficherMultiplier = document.getElementById("multiplier");
+var afficherMults = document.getElementById("mults");
+
 var acheterAutoclicker = document.getElementById("autoclic");
-var acheterBonus = document.getElementById("bonnus"); //A la place de l'id bonus, j'affiche dans l'id bonnus: div qui se trouve plus haut.
+var acheterBonus = document.getElementById("bonus");
+var acheterBonnus = document.getElementById("bonnus"); //A la place de l'id bonus, j'affiche dans l'id bonnus: div qui se trouve plus haut.
 var afficheTest = document.getElementById('test');
 var intervalId = null;
 var intervalId2 = null;
@@ -41,7 +44,7 @@ function augmenterMultiplicateur() {
 }
 
 function afficheMultiplicateur() {
-    afficherMultiplier.innerHTML = 'Multiplicateur x '+multiplicateur.toString(10)+' Prix du prochain: '+prixMultiplicateur.toString(10);
+    afficherMults.innerHTML = 'Multiplicateur x '+multiplicateur.toString(10)+ '<br>' +' Prix du prochain: '+prixMultiplicateur.toString(10);
 }
 
 function acheteAutoclicker () {
@@ -92,7 +95,7 @@ function startBonus(startBonus) {
         intervalID5 = setInterval(function() {
             bBonus = true; 
             acheterBonus.disabled = true; 
-            acheterBonus.innerHTML = 'Bonus - Reste '+timer+' sec.'; 
+            acheterBonnus.innerHTML = 'Bonus - Reste '+timer+' sec.'; 
             if (--timer < 0) {
                 clearInterval(intervalID5); 
                 bBonus = false;
@@ -134,7 +137,7 @@ function zoombutton() {
     
 }
 
-/*setInterval(function() {
+setInterval(function() {
     if (score >= prixMultiplicateur) {
         afficherMultiplier.disabled = false;
     } else {
@@ -150,7 +153,7 @@ function zoombutton() {
     } else {
         acheterBonus.disabled = true;
     }
-}, 20);*/
+}, 20);
 
 function playSound() {
     
