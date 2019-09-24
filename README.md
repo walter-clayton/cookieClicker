@@ -12,6 +12,8 @@
 
 **Take a look ?**: [Démo](https://mariethielens.github.io/onePage/)
 
+[demo](https://gfycat.com/theseharshbasil)
+
 ## Instructions for contributors
 1. Initialising
 	<ul>
