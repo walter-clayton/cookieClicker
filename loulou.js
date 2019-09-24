@@ -115,6 +115,7 @@ function autoclicker() {
     }
 }
 
+/* button mouve on clic */
 function initCookieClicker() {
     cliquerCookie.onclick = augmenterScore();
     
@@ -136,6 +137,8 @@ function zoombutton() {
     document.getElementById("clic").style.height = "16rem";
     
 }
+/* button mouve on clic END*/
+
 
 setInterval(function() {
     if (score >= prixMultiplicateur) {
@@ -162,3 +165,29 @@ const mySound = document.getElementById("audio");
 const correctButton = document.getElementById("Clic");
 Clic.addEventListener("click", function(){ mySound.play(); })
 
+/*BONUS IMAGE RANDOM */
+function moveIt() {
+    picture = document.getElementById("image");
+    spaceW = screen.height - picture.height;
+    spaceH = screen.width - picture.width;
+
+    
+    
+    picture.style.top = Math.round(Math.random() * spaceW) + "px";
+    picture.style.left = Math.round(Math.random() * spaceH) + "px";
+}
+
+setInterval(function(){ var x = document.getElementById("image").style.visibility = "visible"; moveIt();
+ }, 30000); 
+ setInterval(function(){ var x = document.getElementById("image").style.visibility = "hidden";
+ }, 32000); 
+
+ function bonusclic() {
+    score = score * 2
+    afficheScore()
+    var x = document.getElementById("image").style.visibility = "hidden"
+    var audio = document.getElementById("audio2");
+    audio.play();
+  }
+
+  /*BONUS RANDOM END*/
