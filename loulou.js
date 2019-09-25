@@ -10,11 +10,15 @@ var timeAutoclicker = 15; // 60 sec
 var cliquerCookie = document.getElementById('clic');
 var afficherScore = document.getElementById('affichage');
 var afficherMultiplier = document.getElementById("multiplier");
+var afficherMults = document.getElementById("mults");
 var acheterAutoclicker = document.getElementById("autoclic");
 var acheterBonus = document.getElementById("bonus");
+var acheterBonnus = document.getElementById("bonnus"); //A la place de l'id bonus, j'affiche dans l'id bonnus: div qui se trouve plus haut.
 var afficheTest = document.getElementById('test');
 var intervalId = null;
 var intervalId2 = null;
+
+window.onload = initCookieClicker;
 
 function augmenterScore() {
     if (bBonus == true) {
@@ -41,7 +45,7 @@ function augmenterMultiplicateur() {
 }
 
 function afficheMultiplicateur() {
-    afficherMultiplier.innerHTML = 'Multiplicateur x '+multiplicateur.toString(10)+' Prix du prochain: '+prixMultiplicateur.toString(10);
+    afficherMults.innerHTML = 'Multiplicateur x '+multiplicateur.toString(10)+ '<br>' +' Prix du prochain: '+prixMultiplicateur.toString(10);
 }
 
 function acheteAutoclicker () {
@@ -92,7 +96,7 @@ function startBonus(startBonus) {
         intervalID5 = setInterval(function() {
             bBonus = true; 
             acheterBonus.disabled = true; 
-            acheterBonus.innerHTML = 'Bonus - Reste '+timer+' sec.'; 
+            acheterBonnus.innerHTML = 'Bonus - Reste '+timer+' sec.'; 
             if (--timer < 0) {
                 clearInterval(intervalID5); 
                 bBonus = false;
@@ -112,10 +116,12 @@ function autoclicker() {
     }
 }
 
+/* button mouve on clic */
 function initCookieClicker() {
-    cliquerCookie.onclick = augmenterScore();
-    
-    acheterAutoclicker.disabled = false;
+    afficheMultiplicateur();
+    acheterBonnus.innerHTML = 'Bonus';
+    //cliquerCookie.onclick = augmenterScore();
+    //acheterAutoclicker.disabled = false;
 }
 
 
@@ -133,8 +139,11 @@ function zoombutton() {
     document.getElementById("clic").style.height = "16rem";
     
 }
+/* button mouve on clic END*/
 
-/*setInterval(function() {
+
+
+setInterval(function() {
     if (score >= prixMultiplicateur) {
         afficherMultiplier.disabled = false;
     } else {
@@ -150,7 +159,7 @@ function zoombutton() {
     } else {
         acheterBonus.disabled = true;
     }
-}, 20);*/
+}, 20);
 
 function playSound() {
     
@@ -159,3 +168,29 @@ const mySound = document.getElementById("audio");
 const correctButton = document.getElementById("Clic");
 Clic.addEventListener("click", function(){ mySound.play(); })
 
+/*BONUS IMAGE RANDOM */
+function moveIt() {
+    picture = document.getElementById("image");
+    spaceW = screen.height - picture.height;
+    spaceH = screen.width - picture.width;
+
+    
+    
+    picture.style.top = Math.round(Math.random() * spaceW) + "px";
+    picture.style.left = Math.round(Math.random() * spaceH) + "px";
+}
+
+setInterval(function(){ var x = document.getElementById("image").style.visibility = "visible"; moveIt();
+ }, 30000); 
+ setInterval(function(){ var x = document.getElementById("image").style.visibility = "hidden";
+ }, 32000); 
+
+ function bonusclic() {
+    score = score * 2
+    afficheScore()
+    var x = document.getElementById("image").style.visibility = "hidden"
+    var audio = document.getElementById("audio2");
+    audio.play();
+  }
+
+  /*BONUS RANDOM END*/

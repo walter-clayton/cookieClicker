@@ -1,0 +1,179 @@
+@media screen and (min-width: 0px) and (max-width: 500px){
+    /*Body*/
+    body {
+        background-image:none;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+
+    /*La div le jeux*/
+    #lejeux{
+        width: 100%;
+        height: 86.999rem;
+        background:linear-gradient(-45deg, #ee7752, #ef7e5a, #23a6d5, #23d5ab); /*Le dégradé, on peut soit le changer soit le virer, si qlq'un n'aime pas*/
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        margin-left: 0%;
+        
+    }
+    /*Header*/
+    /*Le titre dans le header*/
+    #lescore .letitre{
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    /*img header*/
+    header img{
+        width: 90%;
+        position: absolute;
+        top: 1rem;
+        left: 1%;
+        
+    }
+
+    /*#Lejeux #lescore*/
+    #lejeux #lescore{
+        width: 100%;
+        height: 86.999rem;
+    }
+
+    /*#lescore .onaffich*/
+    #lescore .onaffich{
+        margin-top: 3rem;
+    }
+
+    /*#lescore #affichage*/
+    #lescore #affichage{
+        font-size: 2.5rem;
+        margin-left: 2%;
+        text-align: center;
+        padding-top: 2.5rem;
+    }
+
+    /*#lescore .lecookie*/
+    #lescore .lecookie{
+        width: 85%;
+        height: 11rem;
+        margin-top: 2rem;
+        margin-left: 1.4rem;
+    }
+
+
+
+    /*La section du multiplicateur et du bonus*/
+    #lejeux #lebonus{
+        width: 100%;
+        height: 45.8125rem;
+        position: absolute;
+        top: 40rem;
+
+    }
+    
+
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 1050px){
+    /*Body*/
+    body {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    /*La div le jeux*/
+    #lejeux{
+        width: 80%;
+        height: 48.8125rem;
+        background:linear-gradient(-45deg, #ee7752, #ef7e5a, #23a6d5, #23d5ab); /*Le dégradé, on peut soit le changer soit le virer, si qlq'un n'aime pas*/
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        margin-left: 10%;
+        
+    }
+
+    /*Header*/
+    /*Le titre dans le header*/
+    #lescore .letitre{
+        width: 100%;
+        margin-left: 2%;
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    /*Img Header*/
+    header img{
+        width: 90%;
+        position: absolute;
+        top: 1rem;
+        left: 6%;
+        
+    }
+
+    #lescore .onaffich{
+        margin-top: 2rem;
+    }
+
+    /*#Lejeux #lescore*/
+    #lejeux #lescore{
+        width: 100%;
+        height: 87.8125rem;
+    }
+
+    /*#lescore .lecookie*/
+    #lescore .lecookie{
+        width: 57%;
+        height: 10rem;
+        margin-top: 4rem;
+        margin-left: 24%;
+    }
+
+    /*Le bonus*/
+    #lejeux #lebonus{
+        width: 80%;
+        height: 45.8125rem;
+        position: absolute;
+        top: 40rem;
+
+    }
+
+    #lebonus .foisdeux{
+        width: 100%;
+        height: 24.90625rem;
+        
+    }
+    
+    .foisdeux .xdeux #mults{
+        width: 75%;
+        margin-left: 12%;
+    }
+
+    .foisdeux .xdeux #bonnus{
+        width: 75%;
+        margin-left: 12%;
+        
+    }
+
+    #lebonus .myButton1{
+        width: 68%;
+        margin-left: 16%;
+    }
+
+    #lebonus .myButton2{
+        width: 68%;
+        margin-left: 16%;
+    }
+
+    #lebonus .myButton3{
+        width: 68%;
+        margin-left: 16%;
+    }
+
+    
+
+}

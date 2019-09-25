@@ -5,34 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="reponsive.css">
+    <link rel="shortcut icon" sizes="32x32" type="images/png" href="./images/Picsou.png"  />
+    <!--<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">-->
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <title>Loulou Clicker</title>
 
 </head>
-<body onload="initCookieClicker">
+<body>
     <!--Début du site-->
     <section id="lejeux">
         <!--Début section lebonus-->
             <section id="lebonus">
                 <section class="foisdeux">
                     <section class="xdeux">
-                        <section id="mults">Résultmult</section>
-                        <section id="autclics">Résultautoclic</section>
-                        <section id="bonus">Bonus++</section>
+                        <section id="mults"></section>
+                        <section id="bonnus"></section>
                     </section>
                 </section>
                 <!--La section bouton-->
                 <section class="dubouton">
-                    <button id="multiplier" onclick="augmenterMultiplicateur()" class="btn">Multiplier</button>
+                    <!--<a href="#" id="multiplier" onclick="augmenterMultiplicateur()" class="myButton1">Multiplicateur</a>-->
+                    <button id="multiplier" onclick="augmenterMultiplicateur()" class="myButton1">Multiplier</button>
                     <!--Le résultat apparaît dans l'id mults-->
 
-                    <button id="autoclic" class="btn">Autoclic</button>
+                    <!--<a href="#" id="autoclic" onclick="acheteAutoclicker()" class="myButton2">Autoclic</a>-->
+                    <button id="autoclic" onclick="acheteAutoclicker()" class="myButton2">Autoclic</button>
                     
-
-                    <button id="bonus" onclick="acheteAutoclicker()" class="btn">Bonus ++</button>
-                    <!--Le résultat saffiche dans l'id bonus-->
+                    <!--<a href="#" id="bonus" onclick="acheteBonus()" class="myButton3">Bonus++</a>-->
+                    <button id="bonus" onclick="acheteBonus()" class="myButton3">Acheter Bonus</button>
+                    <!--Le résultat saffiche dans l'id bonnus-->
                 </section>
 
             </section>
@@ -56,16 +60,22 @@
                <section class="lecookie">
 
                    <section id="Clic">
-       
 
-                       <img src="images/LoulouClicker.svg" alt="LoulouClicker" id="clic" onclick="augmenterScore()" onmousedown="smallbutton()" onmouseup="normalbutton()" onmouseover="zoombutton()" onmouseout="normalbutton()" onclick="playSound('./sounds/duck-quack2.wav')" >
-                       <audio id="audio"><source src="./sounds/duck-quack2.wav" /></audio>
+
+                        <img src="images/LoulouClicker.svg" alt="LoulouClicker" id="clic" onclick="augmenterScore()" onclick="playSound('./sounds/duck-quack.wav')" onmousedown="smallbutton()" onmouseup="normalbutton()" onmouseover="zoombutton()" onmouseout="normalbutton()">
+                       <audio id="audio"><source src="./sounds/duck-quack.wav" /></audio>
 
                    </section>
 
                </section>
            </section>
         <!--Fin séction lescore--> 
+
+           <!-- section BonusImageRanadom -->
+           <img src="images/coin.png" alt="img" id="image" style="position: fixed; visibility: hidden; width: 100px;" onclick="bonusclic()">
+           <audio id="audio2"><source src="./sounds/coin.mp3" /></audio>
+           <!-- section BonusImageRanadom -->
+           
        </section>
 
     <!--Fin du site-->
