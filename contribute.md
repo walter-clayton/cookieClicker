@@ -9,7 +9,7 @@
 3. Create a branch on the terminal with **`git checkout -b branch_issue_name`** *e.g. `make_page_responsive`*
 4. Write your code and save on that **`branch_issue_name`**!
 5. When finished:
-  5.1. `git status`
+ * `git status`
  * `git add .`
  * `git commit -m "I have made x,y,z changes..."`
  * `git push origin branch_issue_name`
