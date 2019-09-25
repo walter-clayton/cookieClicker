@@ -6,7 +6,7 @@ This is a ["Cookie Clicker"](http://orteil.dashnet.org/cookieclicker/) type game
 This was a group project built by a team of 5 developers. The objective was to create a responsive web app built with HTML, CSS, and JavaScript. 
 We used the Agile Methodology to complete the task efficiently and on time.
 
-**Take a look ?** [Demo](https://mariethielens.github.io/onePage/)
+**Take a look ?** [Demo](https://walter-clayton.github.io/cookieClicker/)
 
 ![demo](./gif/readme.gif)
 
