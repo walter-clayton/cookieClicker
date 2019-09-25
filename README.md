@@ -39,7 +39,7 @@ We used the Agile Methodology to complete the task efficiently and on time.
   ---
 
 #### Bonus Coin 
-![coin](./images/small_coin.jpg)
+![coin](./images/small_coin.png)
   * Appears randomly on the page every 30 seconds and lasts for 2 seconds. 
   * Doubles the score on click.
   ---
