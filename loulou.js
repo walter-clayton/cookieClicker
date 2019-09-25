@@ -11,13 +11,14 @@ var cliquerCookie = document.getElementById('clic');
 var afficherScore = document.getElementById('affichage');
 var afficherMultiplier = document.getElementById("multiplier");
 var afficherMults = document.getElementById("mults");
-
 var acheterAutoclicker = document.getElementById("autoclic");
 var acheterBonus = document.getElementById("bonus");
 var acheterBonnus = document.getElementById("bonnus"); //A la place de l'id bonus, j'affiche dans l'id bonnus: div qui se trouve plus haut.
 var afficheTest = document.getElementById('test');
 var intervalId = null;
 var intervalId2 = null;
+
+window.onload = initCookieClicker;
 
 function augmenterScore() {
     if (bBonus == true) {
@@ -117,9 +118,10 @@ function autoclicker() {
 
 /* button mouve on clic */
 function initCookieClicker() {
-    cliquerCookie.onclick = augmenterScore();
-    
-    acheterAutoclicker.disabled = false;
+    afficheMultiplicateur();
+    acheterBonnus.innerHTML = 'Bonus';
+    //cliquerCookie.onclick = augmenterScore();
+    //acheterAutoclicker.disabled = false;
 }
 
 
@@ -138,6 +140,7 @@ function zoombutton() {
     
 }
 /* button mouve on clic END*/
+
 
 
 setInterval(function() {
