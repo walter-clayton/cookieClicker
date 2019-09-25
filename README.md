@@ -69,3 +69,4 @@ if you would like to contribute
 
 * Thank you [BeCode](https://www.becode.org) for putting the team together!
 * Inspired by [Cookie](http://orteil.dashnet.org/cookieclicker/) 
+* Thank you Eric Meyer for the Reset CSS.
