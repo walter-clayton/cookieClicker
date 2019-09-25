@@ -1,11 +1,21 @@
 body {
+    /*
     background-image:url("./images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
     height: 100%;
+    */
+    width: 100%;
+    min-height: 100vh;
+    background-image:url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+body img{
+    width: 100%;
+}
 /*Le jeux*/
 #lejeux{
     width: 60%;
@@ -68,7 +78,6 @@ body {
 
 }
 
-
 .foisdeux .xdeux #bonnus{
     width: 94%;
     height: 8rem;
@@ -105,7 +114,7 @@ body {
 #lebonus .myButton1{ 
     width: 92%;
     height: 4.2rem;
-    background-color: #81b770;
+    background-color: #bae6ac;
     box-shadow: 2px 3px 3px 0px rgba(102, 103, 103, 0.4);
     border: none;
     border-radius: .2rem;
@@ -119,7 +128,7 @@ body {
     width: 80%;
     height: 4.2rem;
     margin-left: 10%;
-    background-color: #fece00; 
+    background-color: #6ec154; 
     transition-duration: 250ms;
     
 }
@@ -184,7 +193,7 @@ body {
     font-size: 3.125rem; /*50px*/
     padding-top: 3rem; /*48px*/
     padding-bottom: 3rem;
-    margin-left: 26%;
+    margin-left: 31%;
 }
 
 header img{
@@ -208,19 +217,20 @@ header img{
 #lescore #affichage{
     width: 67%;
     height: 3rem;
-    margin-left: 43%;
+    margin-left: 2rem;
     padding-top: 2rem;
     font-family: 'Lobster', cursive;
-    font-size: 4rem;
+    font-size: 2.5rem;
+    text-align: center;
     color: #000;
 }
 
 /*Le cookie est ici- Section Clic Cookie*/
 #lescore .lecookie{
-    width: 40%;
+    width: 57%;
     height: 14rem;
     margin-top: 8rem;
-    margin-left: 11rem;
+    margin-left: 20%;
 }
 
 #lescore .lecookie img{
