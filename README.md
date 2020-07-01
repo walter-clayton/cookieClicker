@@ -63,7 +63,7 @@ if you would like to contribute
 <br>**Peter Van Wymeersch** - [GitHub](https://github.com/peter-vanwymeersch) [FR]
 <br>**Nicolas Tassin** - [GitHub](https://github.com/NicolasTassin) [FR]
 <br>**Moise Nsengiyuma** - [GitHub](https://github.com/Moise-code) [FR]
-<br>**Mouad** - [GitHub](https://github.com/Mouad-becode) [FR]
+<br>**Mouad Ahsina** - [GitHub](https://github.com/Mouad-becode) [FR]
 
 ## Acknowledgment
 
